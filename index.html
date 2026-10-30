@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' rx='10' fill='%231d3a2e'/><path d='M14 37V21L24 13 34 21V37' fill='none' stroke='%23c9a46a' stroke-width='3.2' stroke-linejoin='round'/><rect x='21' y='27' width='6' height='10' fill='%23c9a46a'/></svg>"/>
+<title>Statisfie LLC | Residential Real Estate Holding Company</title>
+<meta name="description" content="Statisfie LLC is a private real estate holding company that acquires and holds single-family homes, with a focus on Illinois. Managed by Joseph Hernandez, Managing Member."/>
+<link rel="canonical" href="https://statisfie.net/"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="Statisfie LLC — Residential Real Estate Holding Company"/>
+<meta property="og:description" content="We acquire and hold single-family homes, with a focus on Illinois. Clear written terms, every time."/>
+<meta property="og:url" content="https://statisfie.net/"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Statisfie LLC","url":"https://statisfie.net/","email":"admin@statisfie.net","telephone":"+1-551-383-4888","description":"Private real estate holding company acquiring and holding single-family homes, with a focus on Illinois.","founder":{"@type":"Person","name":"Joseph Hernandez","jobTitle":"Managing Member"},"address":{"@type":"PostalAddress","addressLocality":"Jersey City","addressRegion":"NJ","addressCountry":"US"}}
+</script>
+<style>
+/* ══════════════════════════════════════════════════════════════════
+   STATISFIE LLC — holding-company site (single page)
+   Brand tokens are shared with email-signature.html; keep them in sync.
+   ══════════════════════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --paper:#f7f5f0;
+  --card:#ffffff;
+  --ink:#16201b;
+  --ink-soft:#5a645e;
+  --line:#e4e0d6;
+  --green:#1d3a2e;
+  --green-deep:#132820;
+  --brass:#c9a46a;
+  --brass-deep:#a8854d;
+  --radius:14px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:700;color:var(--green);letter-spacing:-.4px;line-height:1.15}
+a{color:var(--green)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:2.2px;text-transform:uppercase;color:var(--brass-deep)}
+
+/* ── HEADER ──────────────────────────────────────────────── */
+.top{background:var(--green);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:#fff}
+.brand svg{width:38px;height:38px;flex-shrink:0}
+.brand .bn{font-family:'Source Serif 4',Georgia,serif;font-weight:700;font-size:22px;letter-spacing:-.2px;line-height:1}
+.brand .bn small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--brass);margin-top:4px}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:#dfe7e2;text-decoration:none;font-size:14.5px;font-weight:500;padding:8px 11px;border-radius:8px}
+nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+nav a.cta{background:var(--brass);color:var(--green-deep);font-weight:600}
+nav a.cta:hover{background:#d6b47d;color:var(--green-deep)}
+
+/* ── HERO ────────────────────────────────────────────────── */
+.hero{background:var(--green);color:#e7ede9;padding:56px 0 72px;border-bottom:4px solid var(--brass)}
+.hero h1{color:#fff;font-size:clamp(34px,6vw,58px);max-width:16ch;margin:14px 0 18px}
+.hero h1 em{font-style:normal;color:var(--brass)}
+.hero p.lead{font-size:clamp(17px,2.2vw,20px);max-width:58ch;color:#cfdad3}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15.5px;padding:14px 22px;border-radius:10px}
+.btn.gold{background:var(--brass);color:var(--green-deep)}
+.btn.gold:hover{background:#d6b47d}
+.btn.ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+
+/* ── SECTIONS ────────────────────────────────────────────── */
+section{padding:72px 0}
+section h2{font-size:clamp(28px,4vw,40px);margin:10px 0 14px}
+section .intro{color:var(--ink-soft);max-width:62ch;font-size:18px}
+.grid{display:grid;gap:18px;margin-top:34px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px}
+.card .num{font-family:'Source Serif 4',serif;font-size:15px;font-weight:700;color:var(--brass-deep);letter-spacing:1px}
+.card h3{font-size:22px;margin:8px 0 8px}
+.card p{color:var(--ink-soft);font-size:16px}
+
+.split{display:grid;gap:40px;grid-template-columns:1.1fr .9fr;align-items:start}
+@media (max-width:820px){.split{grid-template-columns:1fr}}
+.principles{list-style:none;margin-top:26px;display:grid;gap:16px}
+.principles li{display:flex;gap:14px;align-items:flex-start}
+.principles li svg{flex-shrink:0;width:22px;height:22px;margin-top:3px}
+.principles b{display:block;color:var(--ink)}
+.principles span{color:var(--ink-soft);font-size:16px}
+
+.facts{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--brass);border-radius:var(--radius);padding:28px 28px 10px}
+.facts h3{font-size:20px;margin-bottom:12px}
+.facts dl{display:grid;grid-template-columns:auto 1fr}
+.facts dt{padding-right:18px}
+.facts dt,.facts dd{padding:12px 0;border-top:1px solid var(--line);font-size:15.5px}
+.facts dt{color:var(--ink-soft);font-weight:500}
+.facts dd{font-weight:600;color:var(--ink);text-align:right;overflow-wrap:anywhere}
+.facts dd a{text-decoration:none}
+
+.band{background:var(--green-deep);color:#dfe7e2}
+.band h2{color:#fff}
+.band .intro{color:#b9c7bf}
+.band .card{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
+.band .card h3{color:#fff}
+.band .card p{color:#b9c7bf}
+
+.contact{display:grid;gap:18px;margin-top:30px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.contact a.card{text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.contact a.card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(29,58,46,.10)}
+.contact .lbl{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--brass-deep)}
+.contact .val{font-family:'Source Serif 4',serif;font-weight:700;font-size:21px;color:var(--green);margin-top:6px;overflow-wrap:anywhere}
+.contact .sub{color:var(--ink-soft);font-size:14.5px;margin-top:4px}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+footer{background:var(--green);color:#b9c7bf;font-size:14px;border-top:4px solid var(--brass)}
+footer .wrap{padding-top:34px;padding-bottom:34px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer .brand .bn{font-size:19px}
+footer p{max-width:56ch;margin-top:12px}
+footer .meta{text-align:right}
+footer .meta a{color:#fff;text-decoration:none}
+@media (max-width:640px){footer .meta{text-align:left}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Statisfie LLC — home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="10" fill="#132820" stroke="#c9a46a" stroke-opacity=".5"/><path d="M14 37V21L24 13 34 21V37" fill="none" stroke="#c9a46a" stroke-width="3.2" stroke-linejoin="round"/><rect x="21" y="27" width="6" height="10" fill="#c9a46a"/></svg>
+      <span class="bn">Statisfie <small>Real Estate Holdings · LLC</small></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#approach">Approach</a>
+      <a href="#sellers">Sellers &amp; Partners</a>
+      <a class="cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--brass)">Private real estate holding company</div>
+    <h1>We buy, hold and care for <em>homes.</em></h1>
+    <p class="lead">Statisfie LLC acquires and holds single-family residential property, with a focus on Illinois. We buy on clear written terms, keep every obligation current, and treat each property as a long-term responsibility.</p>
+    <div class="actions">
+      <a class="btn gold" href="#sellers">Have a property to sell?</a>
+      <a class="btn ghost" href="#contact">Contact the company</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<section id="about">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">About the company</div>
+      <h2>A focused owner of residential property.</h2>
+      <p class="intro">Statisfie LLC is the holding entity for our residential acquisitions. It takes title to the homes we buy, carries the obligations that come with ownership, and is the party on every purchase agreement we sign. The company is managed by its Managing Member, Joseph Hernandez.</p>
+      <ul class="principles">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#a8854d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Principal, not agent.</b><span>We buy for our own account. We do not represent buyers or sellers as a broker or agent.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#a8854d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Everything in writing.</b><span>Price, payments and responsibilities are set out in a signed agreement before anything changes hands.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#a8854d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Obligations kept current.</b><span>Payments, property taxes and insurance on the homes we hold are paid on time and documented.</span></div></li>
+      </ul>
+    </div>
+    <aside class="facts" aria-label="Company information">
+      <h3>Company information</h3>
+      <dl>
+        <dt>Legal name</dt><dd>Statisfie LLC</dd>
+        <dt>Entity type</dt><dd>Limited liability company</dd>
+        <dt>Managing Member</dt><dd>Joseph Hernandez</dd>
+        <dt>Business</dt><dd>Residential real estate</dd>
+        <dt>Primary market</dt><dd>Illinois</dd>
+        <dt>Office</dt><dd>Jersey City, NJ</dd>
+        <dt>Email</dt><dd><a href="mailto:admin@statisfie.net">admin@statisfie.net</a></dd>
+        <dt>Phone</dt><dd><a href="tel:+15513834888">(551) 383-4888</a></dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section id="approach" class="band">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--brass)">How we work</div>
+    <h2>Acquire. Hold. Steward.</h2>
+    <p class="intro">A simple model, run carefully. Every home we take on is one we intend to keep in good standing.</p>
+    <div class="grid">
+      <div class="card"><div class="num">01</div><h3>Acquire</h3><p>We purchase single-family homes directly from owners and investors, including on seller-financed terms when that serves both sides.</p></div>
+      <div class="card"><div class="num">02</div><h3>Hold</h3><p>Statisfie LLC holds title and carries the property: payments, taxes and insurance are kept current and on record.</p></div>
+      <div class="card"><div class="num">03</div><h3>Steward</h3><p>We keep each home occupied and cared for, with owner-occupants who intend to make it their own.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sellers">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">For sellers &amp; partners</div>
+      <h2>Selling a home in Illinois?</h2>
+      <p class="intro">If you own a single-family home you are ready to sell — including one with an existing loan or one that needs work — we are glad to talk. We will listen first, make a clear written offer, and tell you plainly if it is not a fit.</p>
+      <ul class="principles">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#a8854d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Owners and investors</b><span>Direct sellers, landlords and investors with properties to move.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#a8854d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Flexible terms</b><span>Cash or seller-financed structures, set out in plain language.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#a8854d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>A real answer, quickly</b><span>We reply to every inquiry within one business day.</span></div></li>
+      </ul>
+    </div>
+    <div class="facts">
+      <h3>Tell us about the property</h3>
+      <p style="color:var(--ink-soft);font-size:15.5px;margin-bottom:18px">Send the address, a few words about its condition, and the best way to reach you. That is all we need to start.</p>
+      <a class="btn gold" style="display:block;text-align:center;margin-bottom:12px" href="mailto:admin@statisfie.net?subject=Property%20for%20sale%20%E2%80%94%20Statisfie%20LLC">Email the property details</a>
+      <a class="btn" style="display:block;text-align:center;border:1px solid var(--line);color:var(--green);margin-bottom:20px" href="tel:+15513834888">Call (551) 383-4888</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2>Reach the company.</h2>
+    <p class="intro">Correspondence, title and closing matters, and seller inquiries all come to the same desk.</p>
+    <div class="contact">
+      <a class="card" href="mailto:admin@statisfie.net"><div class="lbl">Email</div><div class="val">admin@statisfie.net</div><div class="sub">Replies within one business day</div></a>
+      <a class="card" href="tel:+15513834888"><div class="lbl">Phone</div><div class="val">(551) 383-4888</div><div class="sub">Mon–Sat, 9am–5pm ET</div></a>
+      <div class="card"><div class="lbl">Office</div><div class="val">Jersey City, NJ</div><div class="sub">Correspondence by email preferred</div></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/" aria-label="Statisfie LLC — home">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="10" fill="#132820" stroke="#c9a46a" stroke-opacity=".5"/><path d="M14 37V21L24 13 34 21V37" fill="none" stroke="#c9a46a" stroke-width="3.2" stroke-linejoin="round"/><rect x="21" y="27" width="6" height="10" fill="#c9a46a"/></svg>
+        <span class="bn">Statisfie <small>Real Estate Holdings · LLC</small></span>
+      </a>
+      <p>Statisfie LLC acquires and holds residential real estate for its own account. It is not a licensed real estate brokerage and does not act as an agent for any buyer or seller.</p>
+    </div>
+    <div class="meta">
+      <div><a href="mailto:admin@statisfie.net">admin@statisfie.net</a></div>
+      <div><a href="tel:+15513834888">(551) 383-4888</a></div>
+      <div style="margin-top:12px">© <span id="yr">2026</span> Statisfie LLC. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>

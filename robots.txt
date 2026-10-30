@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /email-signature.html
+Sitemap: https://statisfie.net/sitemap.xml
